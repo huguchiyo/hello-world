@@ -1,0 +1,10 @@
+2017/5/18
+
+nodistのインストール
+http://dennie.tokyo/web/2017/01/08/nodist/
+
+node.jsのWindows版インストール
+http://nodejs.jp/nodejs.org_ja/
+
+node.js HelloWorld
+http://libro.tuyano.com/index3?id=1116003&page=3
