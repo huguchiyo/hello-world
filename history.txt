@@ -8,3 +8,17 @@ http://nodejs.jp/nodejs.org_ja/
 
 node.js HelloWorld
 http://libro.tuyano.com/index3?id=1116003&page=3
+
+node sampleapp.js
+
+http://127.0.0.1:1234/
+
+
+node.jsのサンプルコード
+http://testcording.com/?p=1223
+
+今日はここまで、Hello World出したし
+次回は・・・ボタンを出す!
+
+
+
