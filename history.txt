@@ -21,4 +21,22 @@ http://testcording.com/?p=1223
 次回は・・・ボタンを出す!
 
 
+2017/5/119
 
+
+青木さんに教えてもらう
+express
+http://blog.pepese.com/entry/2017/02/16/154804
+
+MVCモデル
+https://www.google.co.jp/search?q=mvc%E3%83%A2%E3%83%87%E3%83%AB&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi3yaGi4PvTAhXFfbwKHSGdCbkQ_AUICigB&biw=1254&bih=872#imgrc=_iGHcoFeTZy0kM:
+
+Jade
+http://qiita.com/sasaplus1/items/189560f80cf337d40fdf
+
+node.jsの本
+https://mayonez.jp/1653
+
+
+MVC、本当にわかってますか？
+http://qiita.com/tshinsay/items/5b1724baf32b8b5113c2
