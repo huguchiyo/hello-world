@@ -21,7 +21,7 @@ http://testcording.com/?p=1223
 次回は・・・ボタンを出す!
 
 
-2017/5/119
+2017/5/19
 
 
 青木さんに教えてもらう
@@ -40,3 +40,17 @@ https://mayonez.jp/1653
 
 MVC、本当にわかってますか？
 http://qiita.com/tshinsay/items/5b1724baf32b8b5113c2
+
+
+2017/5/23
+今日こそボタンを出す
+
+まずはHTML入門サイト
+このページに一通りありそうだ
+http://www.ink.or.jp/~bigblock/html/start_o.html
+これではボタンは表示されるが実行はできない・・・
+
+
+
+
+
