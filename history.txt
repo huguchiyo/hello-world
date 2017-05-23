@@ -50,6 +50,14 @@ http://qiita.com/tshinsay/items/5b1724baf32b8b5113c2
 http://www.ink.or.jp/~bigblock/html/start_o.html
 これではボタンは表示されるが実行はできない・・・
 
+クリック時の処理(onClick)
+https://www.ajaxtower.jp/js/event/index2.html
+
+麻雀画像素材入手
+http://majandofu.com/mahjong-images#001
+
+次はDBに麻雀画像を突っ込んで、配牌を出す！
+
 
 
 
