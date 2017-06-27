@@ -80,5 +80,9 @@ validation:顧客の要求にあっているかを検証する
 http://sachaaaann.hatenablog.com/entry/2015/05/27/080011
 
 
+2017/6/27
+速訳！英辞郎R英和辞書 →便利
+Sourcegraph for GitHub　→便利！
+
 
 
