@@ -84,5 +84,24 @@ http://sachaaaann.hatenablog.com/entry/2015/05/27/080011
 速訳！英辞郎R英和辞書 →便利
 Sourcegraph for GitHub　→便利！
 
+2017/8/03
+TortoiceGitのオーバーレイが表示されない！
+→レジストリに他のツールが登録しすぎてたので、OneDriveをアンインストール
+https://urashita.com/archives/4535
+
+Git言語対応？
+→http://little-braver.com/177/
+
+知らない単語
+CORS
+→https://www.html5rocks.com/en/tutorials/cors/
+
+Ajax
+
+
+SWIFT
+
+javascriptのフレームワークの種類
+
 
 
