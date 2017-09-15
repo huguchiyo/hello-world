@@ -1,0 +1,26 @@
+秘密鍵の生成		
+	openssl genrsa 3072 > ca.key
+
+秘密鍵から公開鍵生成
+	openssl rsa -in private.key.pem -pubout -out public.key.pem
+
+秘密鍵の内容を確認	
+	openssl rsa -in key.pem -text
+
+秘密鍵を復号
+	openssl rsa -in key.pem -out xxxx.pem
+
+CSRの内容を確認	
+	openssl req -inform der -in req.der -text
+	openssl req -in req.pem -text
+
+証明書の内容を確認
+	openssl x509 -inform der -in cer.der -text
+	openssl x509 -in cer.pem -text
+
+CRLの内容を確認
+	openssl crl -inform der -in crl.der -text
+	openssl crl -in crl.pem -text
+
+pkcs12ファイルをpemへ	
+	openssl pkcs12 -in input.12 -out output.pem

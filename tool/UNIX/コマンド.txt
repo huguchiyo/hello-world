@@ -1,0 +1,137 @@
+UNIXコマンド
+・ファイルのリアルタイム閲覧
+ # tail -f access_log
+
+・ショートカットの確認
+ # stty -a
+
+
+・履歴のgrep
+CTRL＋R　で、コマンド履歴を検索できる
+検索できたら、さらにCTRL+Rで次へ
+
+
+http://tetokon.com/2013/01/21/bash-ctrl-r/
+
+・grep
+ファイルの中身の文字列検索
+ # grep -rn "p000481588" *
+
+・ファイルの解凍
+ # gzip -d access_log-20170313.gz
+
+
+・疎通確認パケットのトレース
+ # traceroute 133.139.24.71
+
+・パケット取得
+　tcpdumpインストール
+ # sudo yum -y install tcpdump
+　
+　tcpdump実行パケット出力表示
+ # sudo tcpdump port 443
+
+　tcpdump実行パケット出力をファイル出力
+ # sudo tcpdump port 443 -w test.pcap
+
+・HTTPでのファイル取得
+　SSL無視　kオプション
+ # curl -k 'https://133.139.44.54/v1/signage/list?{mid=31FF-110009}/'
+
+　プロキシ経由
+ # curl -k -U p0xx000417:testproxy0 -x 10.6.248.80:808ttps://133.139.44.54/getWidgetMessage?mid=31FF-110009
+
+　詳細表示　-v オプション
+ # curl -kv  https://133.139.44.54/getWidgetMemid=31FF-110009
+
+・環境変数
+設定
+ # export HTTPS_PROXY="http://10.6.248.80:8080"
+
+表示
+ # export -p
+
+削除
+ # unset HTTPS_PROXY
+
+・OSバージョン確認
+ # cat /etc/redhat-release
+
+・yumコマンド
+OS更新
+ # yum update
+
+設定を削除
+ # yum clean all
+
+yum 設定ファイル
+/etc/yum.conf
+/etc/yum.repos.d
+
+・IPアドレス設定
+IP設定ファイル編集
+ # vi /etc/sysconfig/network-scripts/ifcfg-eth0
+
+IP設定ファイル編集後は以下で再起動する必要がある
+ # service network restart
+
+・ホスト名設定
+コマンドで変更（システム再起動でもとに戻る）
+ # hostname dist-dev-maint-204
+
+恒久的に変更
+ # vi /etc/sysconfig/network 
+
+NETWORKING=yes
+HOSTNAME=dist-dev-maint-204
+GATEWAY=133.139.44.1
+
+・Firewall設定
+現在の設定確認
+ # iptables --list
+
+設定変更
+ # vi /etc/sysconfig/iptables
+
+設定変更を反映
+ # /etc/init.d/iptables restart
+
+・ルーティングテーブル
+確認
+ # route
+
+設定（一時的）
+ # route add -net 10.0.0.0/8 gw 10.236.56.1 eth0
+
+設定（恒久）
+ # /etc/sysconfig/network-scripts/route-eth0
+
+--------------------------
+10.0.0.0/8 via 10.236.57.1
+165.96.0.0/16 via 10.236.57.1 ←　追加
+
+
+・メール送信確認
+以下のコマンドでメールサーバとの接続をする
+ # telnet mail.ricoh.co.jp 25
+Trying 165.96.170.160...
+Connected to mail.ricoh.co.jp.
+Escape character is '^]'.
+220 relay03.isd.ricoh.co.jp ESMTP Ricoh Group Gateway
+
+失敗する場合
+・F/W設定で２５ポートを塞いでいる
+・ルーティングテーブルでメールサーバに通信できる設定になっていない
+
+・ユーザ操作
+ユーザ一覧確認
+ # cat /etc/passwd
+
+ユーザ追加
+　↓ManagedUserを追加
+ #  useradd ManagedUser
+
+パスワード設定
+　↓ManagedUserのパスワードを設定する
+ # passwd ManagedUser
+
