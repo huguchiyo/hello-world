@@ -1,0 +1,34 @@
+構造
+	DB-table-レコード
+
+データ格納方法
+	"pg_largeobject"という特殊テーブルに保管
+	https://lets.postgresql.jp/documents/technical/large_objects
+
+演算子コマンド
+	https://www.postgresql.jp/document/9.3/html/functions-string.html
+
+ユーザ変更
+	su - postgres
+
+ログイン(atremoteという名前のＤＢ)
+	psql -U postgres atremote
+	
+テーブルリスト表示
+	\dt;
+	
+	\d
+
+テーブルの中身を表示 (templateattachテーブル内の表示)
+	select * from templateattach
+
+テーブルの中身の列を指定して表示  (templateattachテーブル内のvfilename列を表示)
+	select vfilename from templateattach
+	
+byteaのバイナリ形式ファイルをテキストに直す	
+	select encode(data,'escape') from pg_largeobject where loid = 35394;
+	（参考）
+	http://moon.ap.teacup.com/kazatoriha/308.html
+	
+	
+	
