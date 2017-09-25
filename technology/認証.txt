@@ -1,0 +1,31 @@
+LDAP認証とOAuthの違い
+https://www.goodpic.com/mt/archives2/2008/01/openid_oauth.html
+
+OpenID
+	アイデンティティを認証する仕組みであり、認可ではない！
+	ウェブサイト(URL)をウェブサイトが認証する仕組み
+	
+OAuth
+	認可	
+
+<シングルサインオン>
+
+	LDAP
+		標準化されたプロトコル
+		ＩＤ／パスワードによるログイン
+		ロールに基づくアクセス管理
+
+		×：企業内の複数アプリが、それぞれ個別のディレクトリを持つ
+
+	Web Access management(WAM)
+
+
+	SMAL
+
+	
+
+/mnt/hdd/jp.co.ricoh.advop.doc/widgetImage.png
+/mnt/hdd/jp.co.ricoh.advop.doc/widgetText.txt
+/mnt/hdd/jp.co.ricoh.advop.doc/widgetURL.txt
+/mnt/hdd/jp.co.ricoh.advop.doc/widgetGetLastDate.txt
+

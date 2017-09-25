@@ -1,0 +1,11 @@
+□検索条件  "(doc\.)|(DOC:)|(CATS_CONN)"
+検索対象   "~2553174.log"
+フォルダ   C:\Users\p000481588\AppData\Local\Temp\notesC0147D
+    (サブフォルダを検索しない)
+    (英大文字小文字を区別しない)
+    (正規表現:bregonig.dll Ver.3.05 with Onigmo 5.13.5)
+    (文字コードセットの自動判別)
+    (一致した行を出力)
+    
+    
+複数条件でgrep
